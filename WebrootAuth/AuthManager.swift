@@ -15,7 +15,7 @@ import Combine
 // Ugly, but fine for quick and dirty
 let authScheme  = "https"
 let authHost    = "identitytoolkit.googleapis.com"
-let authKey     = "AIzaSyAQ_Byfs8vkbdEowP-IJc79lbWUYB7YvOo"
+let authKey     = "REPLACE_WITH_YOUR_AUTH_KEY"
 
 // Simple user struct. This is observable.
 // We obviously wouldn't use this approach with a legit app

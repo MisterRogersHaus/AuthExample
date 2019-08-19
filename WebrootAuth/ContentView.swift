@@ -9,9 +9,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    // Store our session auth manager here.
+    @EnvironmentObject var userData: UserData
+
     var body: some View {
-        Text("Hello World")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        Group {
+            UserSignInView(userData: userData)
+        }.onAppear()
     }
 }
 
@@ -19,7 +23,7 @@ struct ContentView: View {
 #if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(userData)
     }
 }
 #endif

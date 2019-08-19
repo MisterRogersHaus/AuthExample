@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E037F7F230B191B00A0A831 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 3E037F7E230B191B00A0A831 /* readme.md */; };
 		3EB3F3CA2305AA2A00CB5701 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3F3C92305AA2A00CB5701 /* AppDelegate.swift */; };
 		3EB3F3CC2305AA2A00CB5701 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3F3CB2305AA2A00CB5701 /* ContentView.swift */; };
 		3EB3F3CF2305AA2A00CB5701 /* WebrootAuth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3F3CD2305AA2A00CB5701 /* WebrootAuth.xcdatamodeld */; };
 		3EB3F3D12305AA2B00CB5701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB3F3D02305AA2B00CB5701 /* Assets.xcassets */; };
 		3EB3F3D42305AA2B00CB5701 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB3F3D32305AA2B00CB5701 /* Preview Assets.xcassets */; };
 		3EB3F3D72305AA2B00CB5701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB3F3D52305AA2B00CB5701 /* Main.storyboard */; };
+		3EDCD21223098B67002AEDEA /* AuthContainerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDCD21123098B67002AEDEA /* AuthContainerViews.swift */; };
+		3EF122362305F2590019C9CF /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF122352305F2590019C9CF /* AuthManager.swift */; };
+		3EF1223A2305FAFA0019C9CF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3EF122392305FAFA0019C9CF /* Alamofire */; };
+		3EF12240230617660019C9CF /* UserAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF1223F230617660019C9CF /* UserAuthView.swift */; };
+		3EF12242230702E40019C9CF /* InplaceAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF12241230702E40019C9CF /* InplaceAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E037F7E230B191B00A0A831 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		3EB3F3C62305AA2A00CB5701 /* WebrootAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebrootAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB3F3C92305AA2A00CB5701 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EB3F3CB2305AA2A00CB5701 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -25,6 +32,10 @@
 		3EB3F3D62305AA2B00CB5701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EB3F3D82305AA2B00CB5701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EB3F3D92305AA2B00CB5701 /* WebrootAuth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebrootAuth.entitlements; sourceTree = "<group>"; };
+		3EDCD21123098B67002AEDEA /* AuthContainerViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthContainerViews.swift; sourceTree = "<group>"; };
+		3EF122352305F2590019C9CF /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		3EF1223F230617660019C9CF /* UserAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthView.swift; sourceTree = "<group>"; };
+		3EF12241230702E40019C9CF /* InplaceAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InplaceAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EF1223A2305FAFA0019C9CF /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +53,10 @@
 		3EB3F3BD2305AA2A00CB5701 = {
 			isa = PBXGroup;
 			children = (
+				3E037F7E230B191B00A0A831 /* readme.md */,
 				3EB3F3C82305AA2A00CB5701 /* WebrootAuth */,
 				3EB3F3C72305AA2A00CB5701 /* Products */,
+				3EF122312305F2200019C9CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +79,10 @@
 				3EB3F3D92305AA2B00CB5701 /* WebrootAuth.entitlements */,
 				3EB3F3CD2305AA2A00CB5701 /* WebrootAuth.xcdatamodeld */,
 				3EB3F3D22305AA2B00CB5701 /* Preview Content */,
+				3EF122352305F2590019C9CF /* AuthManager.swift */,
+				3EF1223F230617660019C9CF /* UserAuthView.swift */,
+				3EF12241230702E40019C9CF /* InplaceAlert.swift */,
+				3EDCD21123098B67002AEDEA /* AuthContainerViews.swift */,
 			);
 			path = WebrootAuth;
 			sourceTree = "<group>";
@@ -75,6 +93,13 @@
 				3EB3F3D32305AA2B00CB5701 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3EF122312305F2200019C9CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +118,9 @@
 			dependencies = (
 			);
 			name = WebrootAuth;
+			packageProductDependencies = (
+				3EF122392305FAFA0019C9CF /* Alamofire */,
+			);
 			productName = WebrootAuth;
 			productReference = 3EB3F3C62305AA2A00CB5701 /* WebrootAuth.app */;
 			productType = "com.apple.product-type.application";
@@ -121,6 +149,9 @@
 				Base,
 			);
 			mainGroup = 3EB3F3BD2305AA2A00CB5701;
+			packageReferences = (
+				3EF122382305FAFA0019C9CF /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 3EB3F3C72305AA2A00CB5701 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +168,7 @@
 			files = (
 				3EB3F3D72305AA2B00CB5701 /* Main.storyboard in Resources */,
 				3EB3F3D42305AA2B00CB5701 /* Preview Assets.xcassets in Resources */,
+				3E037F7F230B191B00A0A831 /* readme.md in Resources */,
 				3EB3F3D12305AA2B00CB5701 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,7 +181,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EB3F3CC2305AA2A00CB5701 /* ContentView.swift in Sources */,
+				3EF12242230702E40019C9CF /* InplaceAlert.swift in Sources */,
+				3EF122362305F2590019C9CF /* AuthManager.swift in Sources */,
+				3EDCD21223098B67002AEDEA /* AuthContainerViews.swift in Sources */,
 				3EB3F3CF2305AA2A00CB5701 /* WebrootAuth.xcdatamodeld in Sources */,
+				3EF12240230617660019C9CF /* UserAuthView.swift in Sources */,
 				3EB3F3CA2305AA2A00CB5701 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +385,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3EF122382305FAFA0019C9CF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.8.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3EF122392305FAFA0019C9CF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3EF122382305FAFA0019C9CF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		3EB3F3CD2305AA2A00CB5701 /* WebrootAuth.xcdatamodeld */ = {
